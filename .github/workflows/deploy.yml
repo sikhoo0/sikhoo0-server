@@ -20,14 +20,14 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
-        script: |
-          echo "----------"
-          cd /home/ubuntu/sikhoo0-server
-          ls
-          git pull
-          yarn build
-          pm2 list
-          pm2 kill
-          pm2 list
-          yarn start:prod
-          pm2 list
+          script: |
+            echo "----------"
+            cd /home/ubuntu/sikhoo0-server
+            ls
+            git pull
+            yarn build
+            pm2 list
+            pm2 kill
+            pm2 list
+            yarn start:prod
+            pm2 list
