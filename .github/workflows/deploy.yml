@@ -16,6 +16,7 @@ jobs:
       - name: test
         run: |
           ls
+          pwd
 
 #      - name: EC2에 접속
 #        uses: appleboy/ssh-action@master
