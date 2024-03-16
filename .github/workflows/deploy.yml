@@ -25,7 +25,7 @@ jobs:
             cd /home/ubuntu/sikhoo0-server
             ls
             git pull
-            yarn build
+            sudo yarn build
             pm2 list
             pm2 kill
             pm2 list
