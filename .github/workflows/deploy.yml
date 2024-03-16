@@ -1,0 +1,22 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [ "main"]
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+#    steps:
+#      - name: Checkout
+#        uses: actions/checkout@v3
+
+#      - name: EC2에 접속
+#        uses: appleboy/ssh-action@master
+#        with:
+#          host: ${{ secret.HOST }}
+#          username: ${{ secret.USERNAME }}
+#          key: ${{ secrets.KEY }}
+#          port: ${{ secrets.PORT }}
